@@ -17,3 +17,8 @@ services:
         ports:
             - 5568:3306
         image: ubuntu/mysql
+        volumes:
+            - mysql:/var/lib/mysql
+            
+volumes:
+  mysql:
