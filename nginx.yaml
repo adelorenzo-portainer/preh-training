@@ -1,8 +1,14 @@
 version: '3.3'
 services:
     caddy:
-        container_name: web
+        container_name: caddy
         ports:
             - 5566:80
         image: caddy/caddy
+
+    nginx:
+        container_name: nginx
+        ports:
+            - 5567:80
+        image: nginx
 
