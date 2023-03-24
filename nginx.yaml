@@ -17,7 +17,7 @@ services:
         ports:
             - 5568:3306
         image: ubuntu/mysql
-        environments:
+        environment:
             - MYSQL_ROOT_PASSWORD=preh1234
         volumes:
             - mysql:/var/lib/mysql
