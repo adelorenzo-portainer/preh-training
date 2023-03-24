@@ -12,3 +12,8 @@ services:
             - 5567:80
         image: nginx
 
+    mysql:
+        container_name: mysql
+        ports:
+            - 5568:3306
+        image: ubuntu/mysql
