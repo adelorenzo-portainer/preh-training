@@ -7,8 +7,13 @@ services:
         image: ubuntu/mysql
         environment:
             - MYSQL_ROOT_PASSWORD=preh1234
+        volumes:
+            - db:/var/lib/mysql
     nginx:
         ports:
             - '8085:80'
         container_name: web01
         image: nginx
+        
+volumes:
+  db:
