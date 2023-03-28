@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    mysql:
+        ports:
+            - '3306:3306'
+        container_name: db01
+        image: ubuntu/mysql
+    nginx:
+        ports:
+            - '8080:80'
+        container_name: web01
+        image: nginx
