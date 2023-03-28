@@ -5,6 +5,8 @@ services:
             - '3306:3306'
         container_name: db01
         image: ubuntu/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=preh1234
     nginx:
         ports:
             - '8080:80'
